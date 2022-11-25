@@ -253,7 +253,7 @@ void MovingWorm()
 
 
 
-void DrawGameBoard(HDC hdc)
+void DrawGameBoard(HDC hdc)									// 보드판과 보드에 있는 원 그리는 함수
 {
 	int i, x, y;
 	for (y = 0; y < 22; y++) {
