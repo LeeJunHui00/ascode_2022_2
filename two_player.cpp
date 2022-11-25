@@ -1,5 +1,6 @@
 #include <windows.h>
 #include <TCHAR.H>
+#include <string>
 
 LRESULT CALLBACK WndProc(HWND hwnd, UINT iMsg, WPARAM wParam, LPARAM lParam);
 
@@ -302,6 +303,7 @@ void Stopwatch(HDC hdc, HWND hwnd) {
 		seconds = count;
 		wsprintf(tBuffer, TEXT("남은 시간: %d"), seconds);
 		TextOut(hdc, 150, 500, tBuffer, lstrlen(tBuffer));
+
 	}
 	else
 	{
